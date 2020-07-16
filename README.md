@@ -14,7 +14,7 @@ copilot app init copilot-demos --domain myhappylittle.cloud
 
 ## Step 2:
 
-I'm going to skip the `copilot init` workflow and set up an environment manually. By using init, steps 2, 3 and 4 would be merged into one. 
+I'm going to skip the `copilot init` workflow and set up an environment manually just to show what steps are happening.
 
 My domain name, `myhappylittle.cloud` is in one account, but I want my environment and services to be in a different account, so I'll pass in a profile for that account when I set up my production environment (the profile flag is optional).
 
@@ -65,8 +65,11 @@ Which are two separate services, behind the same App Load Balancer.
 
 Copilot took care of the ACM Cert generation and validation, DNS Subdomain delegation across accounts and spinning up the services.
 
-
 ![Service 1](https://user-images.githubusercontent.com/828419/87613005-ea96e700-c6c0-11ea-9a81-c607ff918673.png)
 
 ![Service 2](https://user-images.githubusercontent.com/828419/87613008-ed91d780-c6c0-11ea-8136-f37f2067b45c.png)
+
+
+
+
 
