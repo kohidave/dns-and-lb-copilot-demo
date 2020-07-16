@@ -14,7 +14,7 @@ copilot app init copilot-demos --domain myhappylittle.cloud
 
 ## Step 2:
 
-I'm going to skip the `copilot init` workflow and set up an environment manually just to show what steps are happening.
+I'm going to skip the `copilot init` workflow and set up an environment manually. By using init, steps 2, 3 and 4 would be merged into one. 
 
 My domain name, `myhappylittle.cloud` is in one account, but I want my environment and services to be in a different account, so I'll pass in a profile for that account when I set up my production environment (the profile flag is optional).
 
