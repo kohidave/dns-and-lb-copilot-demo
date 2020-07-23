@@ -71,3 +71,21 @@ This will generate a `pipeline.yml` file in your copilot directory. Let's update
 
 ![Editing Pipeline](https://user-images.githubusercontent.com/828419/88346831-24d63900-ccfe-11ea-85e6-fbbcec2cf91a.png)
 
+## Step 3:
+
+Now, let's push this code to our release branch:
+
+```sh
+git add . && git commit -m "Adding Pipeline config" && git push origin mainline:release
+```
+
+And finally, deploy our pipeline:
+
+```sh
+copilot pipeline update
+```
+
+![Pipeline Status](https://user-images.githubusercontent.com/828419/88347136-e2612c00-ccfe-11ea-872b-c662e6f41a63.png)
+
+
+Now, every time we push to our release branch, svc1 and svc2 will be deployed.
